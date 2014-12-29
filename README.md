@@ -1,4 +1,4 @@
-![emo. command line emoji search.](http://i.imgur.com/3DxIBWm.png)
+![emo. command line emoji search.](http://i.imgur.com/7JDtvNi.png)
 # emo
 
 Command line emoji search.
@@ -6,6 +6,8 @@ Command line emoji search.
 # Installation
 
     pip install emo
+
+Note: Waiting for a squatter to get off the name before I can publish to pip..
 
 # Usage
 
