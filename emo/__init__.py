@@ -35,18 +35,24 @@ def emoji_search(args):
         xerox.copy(to_print)
 
 def list_all_emoji(copy=False):
-  
+   
+    all_keys = emojiCodeDict 
+    keys = sorted(all_keys, key=lambda key: all_keys[key])
+    
     to_copy = '' 
-    for word in emojiCodeDict.keys():
+    for word in keys:
         print word + ' ' + emojiCodeDict[word] 
         to_copy = to_copy + word + ' ' + emojiCodeDict[word] + '\n'        
     if copy:
         xerox.copy(to_copy)
 
 def dump_all_emoji(copy=False):
+    
+    all_keys = emojiCodeDict 
+    keys = sorted(all_keys, key=lambda key: all_keys[key])
   
     to_print = '' 
-    for word in emojiCodeDict.keys():
+    for word in keys:
         to_print = to_print + ' ' + emojiCodeDict[word] 
     print to_print
     
