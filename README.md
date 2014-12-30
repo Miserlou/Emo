@@ -19,7 +19,7 @@ Emo can also copy straight to the clipboard:
     $ emo tree fire cloud --copy
     🌴 🔥 ☁
 
-There's also a --list argument if you just want to see what's available.
+There are also --list and --all arguments if you just want to see what's available.
 
 And that's all it does!
 
