@@ -34,17 +34,24 @@ def emoji_search(args):
     if args['copy']:
         xerox.copy(to_print)
 
-def list_all_emoji():
-   
+def list_all_emoji(copy=False):
+  
+    to_copy = '' 
     for word in emojiCodeDict.keys():
         print word + ' ' + emojiCodeDict[word] 
+        to_copy = to_copy + word + ' ' + emojiCodeDict[word] + '\n'        
+    if copy:
+        xerox.copy(to_copy)
 
-def dump_all_emoji():
+def dump_all_emoji(copy=False):
   
     to_print = '' 
     for word in emojiCodeDict.keys():
         to_print = to_print + ' ' + emojiCodeDict[word] 
     print to_print
+    
+    if copy:
+       xerox.copy(to_print)
 
 def get_parser():
     parser = argparse.ArgumentParser(description='Command line emoji search.')
@@ -65,10 +72,10 @@ def command_line_runner():
         emoji_search(args)
     
     if args['list']:
-        list_all_emoji()
+        list_all_emoji(args['copy'])
     
     if args['all']:
-        dump_all_emoji()
+        dump_all_emoji(args['copy'])
 
 if __name__ == '__main__':
     command_line_runner()
