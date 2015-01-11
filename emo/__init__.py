@@ -1,5 +1,8 @@
 #! /usr/bin/env python
 
+# I hate Python 3.
+from __future__ import print_function
+
 import argparse
 import xerox
 from code import emojiCodeDict
@@ -30,7 +33,7 @@ def emoji_search(args):
                     to_print =  emojiCodeDict[key]
                 break
 
-    print to_print 
+    print(to_print)
     if args['copy']:
         xerox.copy(to_print)
 
@@ -41,7 +44,7 @@ def list_all_emoji(copy=False):
     
     to_copy = '' 
     for word in keys:
-        print word + ' ' + emojiCodeDict[word] 
+        print(word + ' ' + emojiCodeDict[word])
         to_copy = to_copy + word + ' ' + emojiCodeDict[word] + '\n'        
     if copy:
         xerox.copy(to_copy)
@@ -54,7 +57,7 @@ def dump_all_emoji(copy=False):
     to_print = '' 
     for word in keys:
         to_print = to_print + ' ' + emojiCodeDict[word] 
-    print to_print
+    print(to_print)
     
     if copy:
        xerox.copy(to_print)
