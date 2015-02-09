@@ -7,8 +7,6 @@ Command line emoji search.
 
     pip install emo
 
-Note: Waiting for a squatter to get off the name before I can publish to pip..
-
 # Usage
 
     $ emo pray fire
