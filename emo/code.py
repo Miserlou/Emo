@@ -901,4 +901,7 @@ emojiCodeDict = {
     ":flip:":                         u"(\u256f\xb0\u25a1\xb0\uff09\u256f\ufe35 \u253b\u2501\u253b",
     ":gimmie:":                       u"\u0f3c \u3064 \u25d5_\u25d5 \u0f3d\u3064",
     ":lenny:":                        u"( \u0361\xb0 \u035c\u0296 \u0361\xb0)",
+    ":yuno:":                         u'\u10da(\u0ca0\u76ca\u0ca0\u10da)',
+    ":disapproval:":                  u'\u0ca0_\u0ca0',
+    
 }
