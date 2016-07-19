@@ -1,2 +1,2 @@
 wsgiref==0.1.2
-xerox==0.3.1
+xerox==0.4.1
