@@ -21,4 +21,10 @@ There are also --list and --all arguments if you just want to see what's availab
 
 And that's all it does!
 
+# See Also
+
+* [Vape](https://github.com/Miserlou/Vape)
+* [Trapify](https://github.com/Miserlou/Trapify)
+* [Zalgo](https://github.com/Miserlou/Zalgo)
+
 Rich Jones 2014.
